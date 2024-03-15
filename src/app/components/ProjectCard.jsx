@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
-  // const [count,setCount] =  useState(0);
-  // const onClick = () => {
-  //   setCount((prev) => {
-  //     return count + 1;
-  //   })
-  // }
+  const [count,setCount] =  useState(0);
+  const onClick = () => {
+    setCount((prev) => {
+      return count + 1;
+    })
+  }
   // const getColorOfCount = () => {
   //   if(count % 3 === 0){
   //     return "bg-red-600";
