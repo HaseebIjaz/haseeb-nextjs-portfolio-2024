@@ -4,24 +4,24 @@ import Link from "next/link";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
-  const [count,setCount] =  useState(0);
-  const onClick = () => {
-    setCount((prev) => {
-      return count + 1;
-    })
-  }
-  const getColorOfCount = () => {
-    if(count % 3 === 0){
-      return "bg-red-600";
-    }
-    else if(count % 3 === 1){
-      return "bg-green-600"
-    }
-    else if(count % 3 ===2)
-    {
-      return "bg-blue-600"
-    }
-  } 
+  // const [count,setCount] =  useState(0);
+  // const onClick = () => {
+  //   setCount((prev) => {
+  //     return count + 1;
+  //   })
+  // }
+  // const getColorOfCount = () => {
+  //   if(count % 3 === 0){
+  //     return "bg-red-600";
+  //   }
+  //   else if(count % 3 === 1){
+  //     return "bg-green-600"
+  //   }
+  //   else if(count % 3 ===2)
+  //   {
+  //     return "bg-blue-600"
+  //   }
+  // } 
   return (
     <div>
       {/* <button onClick={onClick} className={`w-[100px] h-[100px]  ${getColorOfCount()}`}>{count}</button> */}
